@@ -27,12 +27,22 @@ public class Laboratorio {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long idLaboratorio;
 	private String nome;
-	private String endereço;
+	private String endereco;
 	@Enumerated(EnumType.STRING)
 	private Status status;
 	@ManyToMany(mappedBy = "listaLaboratorios")
 	@JsonManagedReference
 	private List<Exame> listaExames;
+
+	public Laboratorio(String nome, String endereco, Status status){
+		this.nome = nome;
+		this.endereco = endereco;
+		this.status = status;
+	}
+
+	public Laboratorio(){
+
+	}
 
 	public Long getIdLaboratorio() {
 		return idLaboratorio;
@@ -47,11 +57,11 @@ public class Laboratorio {
 	}
 
 	public String getEndereço() {
-		return endereço;
+		return endereco;
 	}
 
 	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+		this.endereco = endereço;
 	}
 
 	public Status getStatus() {
@@ -72,7 +82,7 @@ public class Laboratorio {
 
 	@Override
 	public String toString() {
-		return "Laboratorio [idLaboratorio=" + idLaboratorio + ", nome=" + nome + ", endereço=" + endereço + ", status="
+		return "Laboratorio [idLaboratorio=" + idLaboratorio + ", nome=" + nome + ", endereço=" + endereco + ", status="
 				+ status + "]";
 	}
 

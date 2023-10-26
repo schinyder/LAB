@@ -1,5 +1,6 @@
 package com.desafio.laboratorio.entidade;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.*;
@@ -14,12 +15,11 @@ public class Exame {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "idExame")
 	private Long idExame;
-	@Column(name = "NOME")
 	private String nome;
-	@Column(name = "TIPO")
+
 	@Enumerated(EnumType.STRING)
 	private TipoExame tipo;
-	@Column(name = "STATUS")
+
 	@Enumerated(EnumType.STRING)
 	private Status status;
 	@ManyToMany
@@ -27,7 +27,15 @@ public class Exame {
 			@JoinColumn(name = "idExame", referencedColumnName = "idExame") }, inverseJoinColumns = {
 					@JoinColumn(name = "idLaboratorio", referencedColumnName = "idLaboratorio") })
 	@JsonBackReference
-	private List<Laboratorio> listaLaboratorios;
+	private List<Laboratorio> listaLaboratorios = new ArrayList<>();
+
+	public Exame(){}
+
+	public Exame(String nome, Status status, TipoExame tipoExame){
+		this.nome = nome;
+		this.status = status;
+		this.tipo = tipoExame;
+	}
 
 	public String getNome() {
 		return nome;
