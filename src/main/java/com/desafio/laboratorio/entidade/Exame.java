@@ -2,16 +2,7 @@ package com.desafio.laboratorio.entidade;
 
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
@@ -21,10 +12,14 @@ public class Exame {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "idExame")
 	private Long idExame;
+	@Column(name = "NOME")
 	private String nome;
+	@Column(name = "TIPO")
 	@Enumerated(EnumType.STRING)
 	private TipoExame tipo;
+	@Column(name = "STATUS")
 	@Enumerated(EnumType.STRING)
 	private Status status;
 	@ManyToMany
