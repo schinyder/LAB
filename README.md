@@ -19,12 +19,7 @@ O projeto está divido nas seguintes camadas:
 ## Como executar
 1. Clonar/baixar o projeto local
 2. Instalar/verificar a disponibilidade do client POSTMAN local
-2. Ter instalado o BD MySQL Community 
-   3. Setar durante a instalação a senha do user root como '12345678'
-   4. Conectar ao Mysql server e criar uma nova base com nome *'desafiolaboratorio'*
-3. Configurar no aplication.properties a conexão do BD
-   4. Conferir/configurar o host com seu IP local ou localhost
-   5. Conferir/configurar o nome da instancia do banco de dados na variável **``spring.datasource.url ``** com *'desafiolaboratorio'*
+2. Banco de dados em Memoria - utilizado o H2 na inicializão do projeto.
 4. Executar no terminal o comando: ``mvn spring-boot:run``
    5. Conferir o término do load do sprint boot e liberação do application _LaboratorioApplication_ na porta 8080
 5. Chamar os endpoint.

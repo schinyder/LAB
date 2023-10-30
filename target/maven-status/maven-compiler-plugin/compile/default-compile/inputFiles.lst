@@ -5,7 +5,6 @@
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/controle/LaboratorioControle.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/LaboratorioApplication.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/dto/IdLaboratorioDTO.java
-/Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/configuracao/CarregaBanco.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/repositorio/LaboratorioRepositorio.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/excecao/LaboratorioNaoEncontradoException.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/excecao/ControleAdviceCustom.java
@@ -14,6 +13,7 @@
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/dto/LaboratorioDTO.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/conversor/ExameDtoToExame.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/entidade/TipoExame.java
+/Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/configuracao/LoadDatabase.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/conversor/LaboratorioDtoToLaboratorio.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/repositorio/ExameRepositorio.java
 /Users/helio.nascimento/projeto/LAB/src/main/java/com/desafio/laboratorio/excecao/Message.java
