@@ -2,7 +2,7 @@
 Neste primeira fase priorizamos a entrega  funcional das APIs que compõem  os cadastros básicos do sistema de laboratório.
 Nesta API para gerenciamento de laboratórios e exames permite realizar CRUD para exame e laboratório, associar um exame a um laboratório, desassociar um exame de um laboratório e listar todos os laboratórios associados a um exame através da busca por nome do exame.
 ## Tecnologias Utilizadas
-O projeto foi criado com Spring Boot na linguagem de programação Java com BD MySQL, utilizando Spring Data JPA e o gerenciador de dependência Maven.
+O projeto foi criado com Spring Boot na linguagem de programação Java com H2 em memoria, utilizando Spring Data JPA e o gerenciador de dependência Maven.
 
 ## Arquitetura 
 O projeto está divido nas seguintes camadas:
