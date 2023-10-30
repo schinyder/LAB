@@ -2,7 +2,7 @@
 Neste primeira fase priorizamos a entrega  funcional das APIs que compõem  os cadastros básicos do sistema de laboratório.
 Nesta API para gerenciamento de laboratórios e exames permite realizar CRUD para exame e laboratório, associar um exame a um laboratório, desassociar um exame de um laboratório e listar todos os laboratórios associados a um exame através da busca por nome do exame.
 ## Tecnologias Utilizadas
-O projeto foi criado com Spring Boot na linguagem de programação Java com BD MySQL, utilizando Spring Data JPA e o gerenciador de dependência Maven.
+O projeto foi criado com Spring Boot na linguagem de programação Java com H2 em memoria, utilizando Spring Data JPA e o gerenciador de dependência Maven.
 
 ## Arquitetura 
 O projeto está divido nas seguintes camadas:
@@ -19,16 +19,11 @@ O projeto está divido nas seguintes camadas:
 ## Como executar
 1. Clonar/baixar o projeto local
 2. Instalar/verificar a disponibilidade do client POSTMAN local
-2. Ter instalado o BD MySQL Community 
-   3. Setar durante a instalação a senha do user root como '12345678'
-   4. Conectar ao Mysql server e criar uma nova base com nome *'desafiolaboratorio'*
-3. Configurar no aplication.properties a conexão do BD
-   4. Conferir/configurar o host com seu IP local ou localhost
-   5. Conferir/configurar o nome da instancia do banco de dados na variável **``spring.datasource.url ``** com *'desafiolaboratorio'*
+2. Banco de dados em Memoria - utilizado o H2 na inicializão do projeto.
 4. Executar no terminal o comando: ``mvn spring-boot:run``
-   5. Conferir o término do load do sprint boot e liberação do application _LaboratorioApplication_ na porta 8080
+5. Conferir o término do load do sprint boot e liberação do application _LaboratorioApplication_ na porta 8080
 5. Chamar os endpoint.
-   6. Abrir o _POSTMAN_ e configurar a chamado do endpoint usando a url:**`` http://localhost:8080/ [end_points_abaixo]``** utilizando as chamados conforme serviço e body desejado.
+6. Abrir o _POSTMAN_ e configurar a chamado do endpoint usando a url:**`` http://localhost:8080/ [end_points_abaixo]``** utilizando as chamados conforme serviço e body desejado.
 
 ## Como testar 
 O sistema possui os endpoint abaixo: 
