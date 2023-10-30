@@ -21,7 +21,7 @@ O projeto está divido nas seguintes camadas:
 2. Instalar/verificar a disponibilidade do client POSTMAN local
 2. Banco de dados em Memoria - utilizado o H2 na inicializão do projeto.
 4. Executar no terminal o comando: ``mvn spring-boot:run``
-   5. Conferir o término do load do sprint boot e liberação do application _LaboratorioApplication_ na porta 8080
+5. Conferir o término do load do sprint boot e liberação do application _LaboratorioApplication_ na porta 8080
 5. Chamar os endpoint.
    6. Abrir o _POSTMAN_ e configurar a chamado do endpoint usando a url:**`` http://localhost:8080/ [end_points_abaixo]``** utilizando as chamados conforme serviço e body desejado.
 
