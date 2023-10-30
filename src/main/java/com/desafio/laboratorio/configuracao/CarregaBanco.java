@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class LoadDatabase {
+public class CarregaBanco {
 
     @Bean
     CommandLineRunner initDatabase(ExameRepositorio exameRepositorio, LaboratorioRepositorio laboratorioRepositorio) {
